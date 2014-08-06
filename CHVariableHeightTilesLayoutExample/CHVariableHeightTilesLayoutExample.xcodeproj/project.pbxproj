@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42D90FD91992A90C00A19E5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D90FD81992A90C00A19E5D /* Foundation.framework */; };
+		42D90FDB1992A90C00A19E5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D90FDA1992A90C00A19E5D /* CoreGraphics.framework */; };
+		42D90FDD1992A90C00A19E5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D90FDC1992A90C00A19E5D /* UIKit.framework */; };
+		42D90FE31992A90C00A19E5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42D90FE11992A90C00A19E5D /* InfoPlist.strings */; };
+		42D90FE51992A90C00A19E5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D90FE41992A90C00A19E5D /* main.m */; };
+		42D90FE91992A90C00A19E5D /* CHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D90FE81992A90C00A19E5D /* CHAppDelegate.m */; };
+		42D90FEB1992A90C00A19E5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D90FEA1992A90C00A19E5D /* Images.xcassets */; };
+		42D90FF21992A90C00A19E5D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D90FF11992A90C00A19E5D /* XCTest.framework */; };
+		42D90FF31992A90C00A19E5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D90FD81992A90C00A19E5D /* Foundation.framework */; };
+		42D90FF41992A90C00A19E5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D90FDC1992A90C00A19E5D /* UIKit.framework */; };
+		42D90FFC1992A90C00A19E5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42D90FFA1992A90C00A19E5D /* InfoPlist.strings */; };
+		42D90FFE1992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D90FFD1992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests.m */; };
+		42D9100A1992AA0500A19E5D /* CHVariableHeightTilesLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D910091992AA0500A19E5D /* CHVariableHeightTilesLayout.m */; };
+		42D9100D1992AA5900A19E5D /* CHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D9100C1992AA5900A19E5D /* CHViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42D90FF51992A90C00A19E5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42D90FCD1992A90B00A19E5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D90FD41992A90C00A19E5D;
+			remoteInfo = CHVariableHeightTilesLayoutExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42D90FD51992A90C00A19E5D /* CHVariableHeightTilesLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHVariableHeightTilesLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D90FD81992A90C00A19E5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42D90FDA1992A90C00A19E5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42D90FDC1992A90C00A19E5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42D90FE01992A90C00A19E5D /* CHVariableHeightTilesLayoutExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CHVariableHeightTilesLayoutExample-Info.plist"; sourceTree = "<group>"; };
+		42D90FE21992A90C00A19E5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42D90FE41992A90C00A19E5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42D90FE61992A90C00A19E5D /* CHVariableHeightTilesLayoutExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHVariableHeightTilesLayoutExample-Prefix.pch"; sourceTree = "<group>"; };
+		42D90FE71992A90C00A19E5D /* CHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAppDelegate.h; sourceTree = "<group>"; };
+		42D90FE81992A90C00A19E5D /* CHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAppDelegate.m; sourceTree = "<group>"; };
+		42D90FEA1992A90C00A19E5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42D90FF01992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHVariableHeightTilesLayoutExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D90FF11992A90C00A19E5D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		42D90FF91992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CHVariableHeightTilesLayoutExampleTests-Info.plist"; sourceTree = "<group>"; };
+		42D90FFB1992A90C00A19E5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42D90FFD1992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHVariableHeightTilesLayoutExampleTests.m; sourceTree = "<group>"; };
+		42D910081992AA0500A19E5D /* CHVariableHeightTilesLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHVariableHeightTilesLayout.h; sourceTree = "<group>"; };
+		42D910091992AA0500A19E5D /* CHVariableHeightTilesLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHVariableHeightTilesLayout.m; sourceTree = "<group>"; };
+		42D9100B1992AA5900A19E5D /* CHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHViewController.h; sourceTree = "<group>"; };
+		42D9100C1992AA5900A19E5D /* CHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42D90FD21992A90C00A19E5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D90FDB1992A90C00A19E5D /* CoreGraphics.framework in Frameworks */,
+				42D90FDD1992A90C00A19E5D /* UIKit.framework in Frameworks */,
+				42D90FD91992A90C00A19E5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D90FED1992A90C00A19E5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D90FF21992A90C00A19E5D /* XCTest.framework in Frameworks */,
+				42D90FF41992A90C00A19E5D /* UIKit.framework in Frameworks */,
+				42D90FF31992A90C00A19E5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42D90FCC1992A90B00A19E5D = {
+			isa = PBXGroup;
+			children = (
+				42D90FDE1992A90C00A19E5D /* CHVariableHeightTilesLayoutExample */,
+				42D90FF71992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests */,
+				42D90FD71992A90C00A19E5D /* Frameworks */,
+				42D90FD61992A90C00A19E5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42D90FD61992A90C00A19E5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42D90FD51992A90C00A19E5D /* CHVariableHeightTilesLayoutExample.app */,
+				42D90FF01992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42D90FD71992A90C00A19E5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42D90FD81992A90C00A19E5D /* Foundation.framework */,
+				42D90FDA1992A90C00A19E5D /* CoreGraphics.framework */,
+				42D90FDC1992A90C00A19E5D /* UIKit.framework */,
+				42D90FF11992A90C00A19E5D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42D90FDE1992A90C00A19E5D /* CHVariableHeightTilesLayoutExample */ = {
+			isa = PBXGroup;
+			children = (
+				42D910071992AA0500A19E5D /* CHVariableHeightTilesLayout */,
+				42D90FE71992A90C00A19E5D /* CHAppDelegate.h */,
+				42D90FE81992A90C00A19E5D /* CHAppDelegate.m */,
+				42D9100B1992AA5900A19E5D /* CHViewController.h */,
+				42D9100C1992AA5900A19E5D /* CHViewController.m */,
+				42D90FEA1992A90C00A19E5D /* Images.xcassets */,
+				42D90FDF1992A90C00A19E5D /* Supporting Files */,
+			);
+			path = CHVariableHeightTilesLayoutExample;
+			sourceTree = "<group>";
+		};
+		42D90FDF1992A90C00A19E5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42D90FE01992A90C00A19E5D /* CHVariableHeightTilesLayoutExample-Info.plist */,
+				42D90FE11992A90C00A19E5D /* InfoPlist.strings */,
+				42D90FE41992A90C00A19E5D /* main.m */,
+				42D90FE61992A90C00A19E5D /* CHVariableHeightTilesLayoutExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42D90FF71992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				42D90FFD1992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests.m */,
+				42D90FF81992A90C00A19E5D /* Supporting Files */,
+			);
+			path = CHVariableHeightTilesLayoutExampleTests;
+			sourceTree = "<group>";
+		};
+		42D90FF81992A90C00A19E5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42D90FF91992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests-Info.plist */,
+				42D90FFA1992A90C00A19E5D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42D910071992AA0500A19E5D /* CHVariableHeightTilesLayout */ = {
+			isa = PBXGroup;
+			children = (
+				42D910081992AA0500A19E5D /* CHVariableHeightTilesLayout.h */,
+				42D910091992AA0500A19E5D /* CHVariableHeightTilesLayout.m */,
+			);
+			name = CHVariableHeightTilesLayout;
+			path = ../../CHVariableHeightTilesLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42D90FD41992A90C00A19E5D /* CHVariableHeightTilesLayoutExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D910011992A90C00A19E5D /* Build configuration list for PBXNativeTarget "CHVariableHeightTilesLayoutExample" */;
+			buildPhases = (
+				42D90FD11992A90C00A19E5D /* Sources */,
+				42D90FD21992A90C00A19E5D /* Frameworks */,
+				42D90FD31992A90C00A19E5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHVariableHeightTilesLayoutExample;
+			productName = CHVariableHeightTilesLayoutExample;
+			productReference = 42D90FD51992A90C00A19E5D /* CHVariableHeightTilesLayoutExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42D90FEF1992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D910041992A90C00A19E5D /* Build configuration list for PBXNativeTarget "CHVariableHeightTilesLayoutExampleTests" */;
+			buildPhases = (
+				42D90FEC1992A90C00A19E5D /* Sources */,
+				42D90FED1992A90C00A19E5D /* Frameworks */,
+				42D90FEE1992A90C00A19E5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42D90FF61992A90C00A19E5D /* PBXTargetDependency */,
+			);
+			name = CHVariableHeightTilesLayoutExampleTests;
+			productName = CHVariableHeightTilesLayoutExampleTests;
+			productReference = 42D90FF01992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42D90FCD1992A90B00A19E5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Cananito;
+				TargetAttributes = {
+					42D90FEF1992A90C00A19E5D = {
+						TestTargetID = 42D90FD41992A90C00A19E5D;
+					};
+				};
+			};
+			buildConfigurationList = 42D90FD01992A90C00A19E5D /* Build configuration list for PBXProject "CHVariableHeightTilesLayoutExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42D90FCC1992A90B00A19E5D;
+			productRefGroup = 42D90FD61992A90C00A19E5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42D90FD41992A90C00A19E5D /* CHVariableHeightTilesLayoutExample */,
+				42D90FEF1992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42D90FD31992A90C00A19E5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D90FE31992A90C00A19E5D /* InfoPlist.strings in Resources */,
+				42D90FEB1992A90C00A19E5D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D90FEE1992A90C00A19E5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D90FFC1992A90C00A19E5D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42D90FD11992A90C00A19E5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D9100A1992AA0500A19E5D /* CHVariableHeightTilesLayout.m in Sources */,
+				42D90FE51992A90C00A19E5D /* main.m in Sources */,
+				42D90FE91992A90C00A19E5D /* CHAppDelegate.m in Sources */,
+				42D9100D1992AA5900A19E5D /* CHViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D90FEC1992A90C00A19E5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D90FFE1992A90C00A19E5D /* CHVariableHeightTilesLayoutExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42D90FF61992A90C00A19E5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D90FD41992A90C00A19E5D /* CHVariableHeightTilesLayoutExample */;
+			targetProxy = 42D90FF51992A90C00A19E5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42D90FE11992A90C00A19E5D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42D90FE21992A90C00A19E5D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42D90FFA1992A90C00A19E5D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42D90FFB1992A90C00A19E5D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42D90FFF1992A90C00A19E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		42D910001992A90C00A19E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42D910021992A90C00A19E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHVariableHeightTilesLayoutExample/CHVariableHeightTilesLayoutExample-Prefix.pch";
+				INFOPLIST_FILE = "CHVariableHeightTilesLayoutExample/CHVariableHeightTilesLayoutExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42D910031992A90C00A19E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHVariableHeightTilesLayoutExample/CHVariableHeightTilesLayoutExample-Prefix.pch";
+				INFOPLIST_FILE = "CHVariableHeightTilesLayoutExample/CHVariableHeightTilesLayoutExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		42D910051992A90C00A19E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CHVariableHeightTilesLayoutExample.app/CHVariableHeightTilesLayoutExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHVariableHeightTilesLayoutExample/CHVariableHeightTilesLayoutExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CHVariableHeightTilesLayoutExampleTests/CHVariableHeightTilesLayoutExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		42D910061992A90C00A19E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CHVariableHeightTilesLayoutExample.app/CHVariableHeightTilesLayoutExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHVariableHeightTilesLayoutExample/CHVariableHeightTilesLayoutExample-Prefix.pch";
+				INFOPLIST_FILE = "CHVariableHeightTilesLayoutExampleTests/CHVariableHeightTilesLayoutExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42D90FD01992A90C00A19E5D /* Build configuration list for PBXProject "CHVariableHeightTilesLayoutExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D90FFF1992A90C00A19E5D /* Debug */,
+				42D910001992A90C00A19E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42D910011992A90C00A19E5D /* Build configuration list for PBXNativeTarget "CHVariableHeightTilesLayoutExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D910021992A90C00A19E5D /* Debug */,
+				42D910031992A90C00A19E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42D910041992A90C00A19E5D /* Build configuration list for PBXNativeTarget "CHVariableHeightTilesLayoutExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D910051992A90C00A19E5D /* Debug */,
+				42D910061992A90C00A19E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42D90FCD1992A90B00A19E5D /* Project object */;
+}
