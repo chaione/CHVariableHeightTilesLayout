@@ -23,7 +23,52 @@
 //  THE SOFTWARE.
 
 #import "CHViewController.h"
+#import "CHCollectionViewCell.h"
+#import "CHVariableHeightTilesLayout.h"
+
+static NSString * const CHCollectionViewCellIdentifier = @"CHCollectionViewCellIdentifier";
+
+@interface CHViewController () <UICollectionViewDataSource, CHVariableHeightTilesLayoutDataSource>
+
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+
+@end
 
 @implementation CHViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    CHVariableHeightTilesLayout *variableHeightTilesLayout = [[CHVariableHeightTilesLayout alloc] init];
+    variableHeightTilesLayout.topSpacing = 5.0;
+    variableHeightTilesLayout.bottomSpacing = 5.0;
+    variableHeightTilesLayout.sideSpacing = 10.0;
+    variableHeightTilesLayout.horizontalCellSpacing = 20.0;
+    variableHeightTilesLayout.verticalCellSpacing = 20.0;
+    variableHeightTilesLayout.dataSource = self;
+    self.collectionView.collectionViewLayout = variableHeightTilesLayout;
+}
+
+#pragma mark - UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 20;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CHCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CHCollectionViewCellIdentifier forIndexPath:indexPath];
+    cell.titleLabel.text = [NSString stringWithFormat:@"%li", (long)indexPath.row];
+    return cell;
+}
+
+#pragma mark - CHVariableHeightTilesLayoutDataSource
+
+- (NSUInteger)totalItemCount {
+    return 20;
+}
+
+- (CGSize)sizeForItemAtIndex:(NSUInteger)index {
+    CGFloat height = 250.0 + (index * 10);
+    return CGSizeMake(235.0, height);
+}
 
 @end

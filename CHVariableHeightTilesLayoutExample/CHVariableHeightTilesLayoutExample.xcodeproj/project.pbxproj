@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42A522B91992B15900501C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A522B81992B15900501C4C /* Main.storyboard */; };
+		42A522BF1992B93300501C4C /* CHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A522BE1992B93300501C4C /* CHCollectionViewCell.m */; };
 		42D90FD91992A90C00A19E5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D90FD81992A90C00A19E5D /* Foundation.framework */; };
 		42D90FDB1992A90C00A19E5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D90FDA1992A90C00A19E5D /* CoreGraphics.framework */; };
 		42D90FDD1992A90C00A19E5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D90FDC1992A90C00A19E5D /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42A522B81992B15900501C4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = CHVariableHeightTilesLayoutExample/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		42A522BD1992B93300501C4C /* CHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCollectionViewCell.h; sourceTree = "<group>"; };
+		42A522BE1992B93300501C4C /* CHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCollectionViewCell.m; sourceTree = "<group>"; };
 		42D90FD51992A90C00A19E5D /* CHVariableHeightTilesLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHVariableHeightTilesLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D90FD81992A90C00A19E5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42D90FDA1992A90C00A19E5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,10 +119,13 @@
 			isa = PBXGroup;
 			children = (
 				42D910071992AA0500A19E5D /* CHVariableHeightTilesLayout */,
+				42A522B81992B15900501C4C /* Main.storyboard */,
 				42D90FE71992A90C00A19E5D /* CHAppDelegate.h */,
 				42D90FE81992A90C00A19E5D /* CHAppDelegate.m */,
 				42D9100B1992AA5900A19E5D /* CHViewController.h */,
 				42D9100C1992AA5900A19E5D /* CHViewController.m */,
+				42A522BD1992B93300501C4C /* CHCollectionViewCell.h */,
+				42A522BE1992B93300501C4C /* CHCollectionViewCell.m */,
 				42D90FEA1992A90C00A19E5D /* Images.xcassets */,
 				42D90FDF1992A90C00A19E5D /* Supporting Files */,
 			);
@@ -239,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A522B91992B15900501C4C /* Main.storyboard in Resources */,
 				42D90FE31992A90C00A19E5D /* InfoPlist.strings in Resources */,
 				42D90FEB1992A90C00A19E5D /* Images.xcassets in Resources */,
 			);
@@ -263,6 +272,7 @@
 				42D90FE51992A90C00A19E5D /* main.m in Sources */,
 				42D90FE91992A90C00A19E5D /* CHAppDelegate.m in Sources */,
 				42D9100D1992AA5900A19E5D /* CHViewController.m in Sources */,
+				42A522BF1992B93300501C4C /* CHCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +471,7 @@
 				42D910031992A90C00A19E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42D910041992A90C00A19E5D /* Build configuration list for PBXNativeTarget "CHVariableHeightTilesLayoutExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +480,7 @@
 				42D910061992A90C00A19E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

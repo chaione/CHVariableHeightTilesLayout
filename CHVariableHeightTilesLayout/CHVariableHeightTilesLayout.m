@@ -24,11 +24,6 @@
 
 #import "CHVariableHeightTilesLayout.h"
 
-static CGFloat const DPIMTopSpacing = 22.0;
-static CGFloat const DPIMBottomSpacing = 10.0;
-static CGFloat const DPIMReportScoreCardsCollectionViewVerticalSpacing = 5.0;
-static CGFloat const DPIMReportScoreCardsCollectionViewHorizontalSpacing = 10.0;
-
 @interface CHVariableHeightTilesLayout ()
 
 @property (nonatomic, strong) NSMutableArray *indexPathGrid;
@@ -41,7 +36,7 @@ static CGFloat const DPIMReportScoreCardsCollectionViewHorizontalSpacing = 10.0;
 - (CGSize)collectionViewContentSize {
     
     CGFloat contentWidth = CGRectGetWidth(self.collectionView.frame);
-    CGFloat contentHeight = [self maxColumnHeightForCurrentIndexPathGrid] + DPIMBottomSpacing;
+    CGFloat contentHeight = [self maxColumnHeightForCurrentIndexPathGrid] + self.bottomSpacing;
     
     return CGSizeMake(contentWidth, contentHeight);
 }
@@ -58,14 +53,14 @@ static CGFloat const DPIMReportScoreCardsCollectionViewHorizontalSpacing = 10.0;
     
     for (NSUInteger columnIndex = 0; columnIndex < gridColumnCount; columnIndex++) {
         
-        CGFloat columnHeight = DPIMTopSpacing;
+        CGFloat columnHeight = self.topSpacing;
         
         for (NSMutableArray *rowArray in self.indexPathGrid) {
             
             if (columnIndex < rowArray.count) {
                 NSIndexPath *indexPath = rowArray[columnIndex];
                 CGSize itemSize = [self sizeForItemAtIndex:indexPath.row];
-                columnHeight += itemSize.height + DPIMReportScoreCardsCollectionViewVerticalSpacing;
+                columnHeight += itemSize.height + self.verticalCellSpacing;
             }
         }
         
@@ -134,8 +129,8 @@ static CGFloat const DPIMReportScoreCardsCollectionViewHorizontalSpacing = 10.0;
 
 - (CGPoint)originForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    CGFloat x = 0.0;
-    CGFloat y = DPIMTopSpacing;
+    CGFloat x = self.sideSpacing;
+    CGFloat y = self.topSpacing;
     
     for (NSMutableArray *rowArray in self.indexPathGrid) {
         
@@ -152,7 +147,7 @@ static CGFloat const DPIMReportScoreCardsCollectionViewHorizontalSpacing = 10.0;
             NSIndexPath *indexPath = self.indexPathGrid[row - 1][column];
             NSString *indexString = [self indexStringForIndexPath:indexPath];
             UICollectionViewLayoutAttributes *attributes = self.layoutAttributesDictionary[indexString];
-            y = CGRectGetMaxY(attributes.frame) + DPIMReportScoreCardsCollectionViewVerticalSpacing;
+            y = CGRectGetMaxY(attributes.frame) + self.verticalCellSpacing;
         }
         
         if (column != 0) {
@@ -160,7 +155,7 @@ static CGFloat const DPIMReportScoreCardsCollectionViewHorizontalSpacing = 10.0;
             NSIndexPath *indexPath = self.indexPathGrid[row][column - 1];
             NSString *indexString = [self indexStringForIndexPath:indexPath];
             UICollectionViewLayoutAttributes *attributes = self.layoutAttributesDictionary[indexString];
-            x = CGRectGetMaxX(attributes.frame) + DPIMReportScoreCardsCollectionViewHorizontalSpacing;
+            x = CGRectGetMaxX(attributes.frame) + self.horizontalCellSpacing;
         }
     }
     
@@ -215,7 +210,7 @@ static CGFloat const DPIMReportScoreCardsCollectionViewHorizontalSpacing = 10.0;
     NSMutableArray *indexPathGrid = [NSMutableArray array];
     
     NSInteger itemCount = [self totalItemCount];
-    CGFloat accumulatedRowWidth = 0.0;
+    CGFloat accumulatedRowWidth = self.sideSpacing;
     
     NSMutableArray *newRowArray = [NSMutableArray array];
     [indexPathGrid addObject:newRowArray];
@@ -226,14 +221,14 @@ static CGFloat const DPIMReportScoreCardsCollectionViewHorizontalSpacing = 10.0;
         CGSize itemSize = [self sizeForItemAtIndex:indexPath.row];
         CGFloat newWidth = accumulatedRowWidth + itemSize.width;
         
-        if (newWidth < CGRectGetWidth(self.collectionView.frame)) {
+        if (newWidth < (CGRectGetWidth(self.collectionView.frame) - self.sideSpacing)) {
             
-            accumulatedRowWidth = newWidth + DPIMReportScoreCardsCollectionViewHorizontalSpacing;
+            accumulatedRowWidth = newWidth + self.horizontalCellSpacing;
             NSMutableArray *currentRow = [indexPathGrid lastObject];
             [currentRow addObject:indexPath];
         } else {
             
-            accumulatedRowWidth = itemSize.width;
+            accumulatedRowWidth = self.sideSpacing + itemSize.width;
             NSMutableArray *newRowArray = [NSMutableArray array];
             [newRowArray addObject:indexPath];
             [indexPathGrid addObject:newRowArray];

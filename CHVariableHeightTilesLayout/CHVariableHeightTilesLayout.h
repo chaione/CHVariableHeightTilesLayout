@@ -36,6 +36,31 @@
  */
 @property (nonatomic, weak) id<CHVariableHeightTilesLayoutDataSource> dataSource;
 
+/**
+ The spacing on the top of the collection view. Defaults to 0.
+ */
+@property (nonatomic, assign) CGFloat topSpacing;
+
+/**
+ The spacing on the bottom of the collection view. Defaults to 0.
+ */
+@property (nonatomic, assign) CGFloat bottomSpacing;
+
+/**
+ The spacing on the sides of the collection view. Defaults to 0.
+ */
+@property (nonatomic, assign) CGFloat sideSpacing;
+
+/**
+ The vertical spacing between cells. Defaults to 0.
+ */
+@property (nonatomic, assign) CGFloat verticalCellSpacing;
+
+/**
+ The horizontal spacing between cells. Defaults to 0.
+ */
+@property (nonatomic, assign) CGFloat horizontalCellSpacing;
+
 @end
 
 /**
