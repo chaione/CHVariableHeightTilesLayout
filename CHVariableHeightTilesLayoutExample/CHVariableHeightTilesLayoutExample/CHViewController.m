@@ -68,7 +68,7 @@ static NSString * const CHCollectionViewCellIdentifier = @"CHCollectionViewCellI
 
 - (CGSize)sizeForItemAtIndex:(NSUInteger)index {
     CGFloat height = 250.0 + (index * 10);
-    return CGSizeMake(235.0, height);
+    return CGSizeMake(236.0, height);
 }
 
 @end

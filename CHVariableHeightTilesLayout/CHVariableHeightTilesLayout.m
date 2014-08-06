@@ -209,8 +209,9 @@
     
     NSMutableArray *indexPathGrid = [NSMutableArray array];
     
+    CGFloat contentWidth = CGRectGetWidth(self.collectionView.frame) - (self.sideSpacing * 2);
     NSInteger itemCount = [self totalItemCount];
-    CGFloat accumulatedRowWidth = self.sideSpacing;
+    CGFloat accumulatedRowWidth = 0.0;
     
     NSMutableArray *newRowArray = [NSMutableArray array];
     [indexPathGrid addObject:newRowArray];
@@ -221,14 +222,14 @@
         CGSize itemSize = [self sizeForItemAtIndex:indexPath.row];
         CGFloat newWidth = accumulatedRowWidth + itemSize.width;
         
-        if (newWidth < (CGRectGetWidth(self.collectionView.frame) - self.sideSpacing)) {
+        if (newWidth <= contentWidth) {
             
             accumulatedRowWidth = newWidth + self.horizontalCellSpacing;
             NSMutableArray *currentRow = [indexPathGrid lastObject];
             [currentRow addObject:indexPath];
         } else {
             
-            accumulatedRowWidth = self.sideSpacing + itemSize.width;
+            accumulatedRowWidth = itemSize.width;
             NSMutableArray *newRowArray = [NSMutableArray array];
             [newRowArray addObject:indexPath];
             [indexPathGrid addObject:newRowArray];
