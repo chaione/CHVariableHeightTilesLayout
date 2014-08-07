@@ -46,6 +46,22 @@ static NSString * const CHCollectionViewCellIdentifier = @"CHCollectionViewCellI
     variableHeightTilesLayout.verticalCellSpacing = 20.0;
     variableHeightTilesLayout.dataSource = self;
     self.collectionView.collectionViewLayout = variableHeightTilesLayout;
+    
+    UITapGestureRecognizer *doubleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(modifyVerticalSpacing:)];
+    doubleTapGestureRecognizer.numberOfTapsRequired = 2;
+    [self.view addGestureRecognizer:doubleTapGestureRecognizer];
+}
+
+#pragma mark - Action Methods
+
+- (void)modifyVerticalSpacing:(UITapGestureRecognizer *)tapGestureRecognizer {
+    CHVariableHeightTilesLayout *variableHeightTilesLayout = (CHVariableHeightTilesLayout *)self.collectionView.collectionViewLayout;
+    
+    if (variableHeightTilesLayout.verticalCellSpacing > 0.0) {
+        variableHeightTilesLayout.verticalCellSpacing = 0.0;
+    } else {
+        variableHeightTilesLayout.verticalCellSpacing = 20.0;
+    }
 }
 
 #pragma mark - UICollectionViewDataSource
