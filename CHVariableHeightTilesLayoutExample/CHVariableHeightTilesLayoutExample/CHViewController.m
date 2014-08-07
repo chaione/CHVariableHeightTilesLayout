@@ -51,23 +51,23 @@ static NSString * const CHCollectionViewCellIdentifier = @"CHCollectionViewCellI
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return 14;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CHCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CHCollectionViewCellIdentifier forIndexPath:indexPath];
-    cell.titleLabel.text = [NSString stringWithFormat:@"%li", (long)indexPath.row];
+    cell.titleLabel.text = [NSString stringWithFormat:@"%li", (long)indexPath.row + 1];
     return cell;
 }
 
 #pragma mark - CHVariableHeightTilesLayoutDataSource
 
 - (NSUInteger)totalItemCount {
-    return 20;
+    return 14;
 }
 
 - (CGSize)sizeForItemAtIndex:(NSUInteger)index {
-    CGFloat height = 250.0 + (index * 10);
+    CGFloat height = 100.0 + pow(index, 3);
     return CGSizeMake(236.0, height);
 }
 
