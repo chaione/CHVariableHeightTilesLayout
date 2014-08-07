@@ -29,7 +29,7 @@ _**Important:**_ If your project doesn't use ARC you must add the `-fobjc-arc` c
 
 Setup example:
 
-```
+```objective-c
 CHVariableHeightTilesLayout *variableHeightTilesLayout = [[CHVariableHeightTilesLayout alloc] init];
 variableHeightTilesLayout.topSpacing = 5.0;
 variableHeightTilesLayout.bottomSpacing = 5.0;
