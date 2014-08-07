@@ -33,6 +33,50 @@
 
 @implementation CHVariableHeightTilesLayout
 
+- (void)setDataSource:(id<CHVariableHeightTilesLayoutDataSource>)dataSource {
+    
+    if (_dataSource != dataSource) {
+        
+        _dataSource = dataSource;
+        [self invalidateLayout];
+    }
+}
+
+- (void)setTopSpacing:(CGFloat)topSpacing {
+    if (_topSpacing != topSpacing) {
+        _topSpacing = topSpacing;
+        [self invalidateLayout];
+    }
+}
+
+- (void)setBottomSpacing:(CGFloat)bottomSpacing {
+    if (_bottomSpacing != bottomSpacing) {
+        _bottomSpacing = bottomSpacing;
+        [self invalidateLayout];
+    }
+}
+
+- (void)setSideSpacing:(CGFloat)sideSpacing {
+    if (_sideSpacing != sideSpacing) {
+        _sideSpacing = sideSpacing;
+        [self invalidateLayout];
+    }
+}
+
+- (void)setVerticalCellSpacing:(CGFloat)verticalCellSpacing {
+    if (_verticalCellSpacing != verticalCellSpacing) {
+        _verticalCellSpacing = verticalCellSpacing;
+        [self invalidateLayout];
+    }
+}
+
+- (void)setHorizontalCellSpacing:(CGFloat)horizontalCellSpacing {
+    if (_horizontalCellSpacing != horizontalCellSpacing) {
+        _horizontalCellSpacing = horizontalCellSpacing;
+        [self invalidateLayout];
+    }
+}
+
 - (CGSize)collectionViewContentSize {
     
     CGFloat contentWidth = CGRectGetWidth(self.collectionView.frame);
